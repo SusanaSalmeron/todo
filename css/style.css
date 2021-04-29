@@ -1,0 +1,120 @@
+
+/* font-family: 'Hachi Maru Pop', cursive;
+
+font-family: 'Lobster', cursive; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+#wrapper {
+    border: 2px solid black;
+    width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: lightgoldenrodyellow
+}
+
+header {
+   height: 8em;
+    width: 100%;
+    margin-left: 2em ;
+}
+
+h1 {
+     
+    text-align: center;
+    font-family: 'Lobster', cursive, Tahoma, Verdana;
+    font-size: 4em;
+}
+
+main div:nth-child(1){
+    margin: 2em;
+}
+
+header #form{
+    margin: 2em 0 ;
+}
+
+header button{
+   height: 2em;
+    width: 10%;
+    border-radius: 20%;
+    margin-left: 1em;
+}
+
+header button:hover {
+    box-shadow:  0 12px 16px 0 slategray;
+    cursor: pointer;
+}
+
+input, select{
+    height: 2em;
+    width: 40%;
+    border: 1px solid grey;
+}
+
+main #message {
+    height: 10vh;
+}
+main #message h2{
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Lobster', cursive, Tahoma, Verdana;
+}
+
+main .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .flex article {
+    height: 250px;
+    width: 200px;
+    background-color:lightcoral;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-bottom-right-radius: 20%;
+    box-shadow: 0 12px 16px 0 dimgray;
+    position: relative;
+}
+main .flex h3{
+    font-family: 'Hachi Maru Pop', cursive;
+
+}
+
+.flex button {
+    position: absolute;
+    left:2px;
+    bottom:0;
+    background-color: transparent;
+    border:transparent;
+    cursor: pointer;
+    
+    
+}
+
+#search input {
+    
+    width: 45%;
+}
+#prioritySearch {
+    width: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

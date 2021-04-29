@@ -6,10 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do...</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="js/datos.js"></script>
 </head>
 
 <body>
+    <div id=wrapper>
+        <header>
+            <h1>Lista de Tareas</h1>
+            <div id="form">
+                <form action="">
+                    <input type="text" placeholder="Tarea" id='Tarea' size="40">
+                    <select id="priority">
+                        <option value="" selected>Elije la pioridad de tu tarea</option>
+                        <option value="alta">Alta</option>
+                        <option value="media">Media</option>
+                        <option value="baja">Baja</option>
+                    </select>
+                    <button class="add">AÑADIR</button>
+                </form>
+            </div>
+        </header>
+        <main>
+            <div>
+                <form id="search">
+                    <select id="prioritySearch">
+                        <option value="" selected>Filtrar por prioridad</option>
+                        <option value="alta">Alta</option>
+                        <option value="media">Media</option>
+                        <option value="baja">Baja</option>
+                    </select>
+                    <input type="text" placeholder="Busqueda" size="40">
+                </form>
+            </div>
+            <div id="message">
+                <!-- <h2>Tarea borrada</h2> -->
+            </div>
+            <div class="flex">
+
+                <!-- <article>
+                    <h3>hacer la colada antes de las 4 <button> <i class="fas fa-trash-alt"></i></button></h3>
+                </article>
+                <article>
+                    <h3>hacer la colada antes de las 4 <button> <i class="fas fa-trash-alt"></i></button></h3>
+                </article>
+                <article>
+                    <h3>hacer la colada antes de las 4 <button> <i class="fas fa-trash-alt"></i></button></h3>
+                </article>
+                <article>
+                    <h3>hacer la colada antes de las 4 <button> <i class="fas fa-trash-alt"></i></button></h3>
+                </article>
+                <article>
+                    <h3>hacer la colada antes de las 4 <button> <i class="fas fa-trash-alt"></i></button></h3>
+                </article> -->
+
+            </div>
+
+
+        </main>
+    </div>
 
 
 
