@@ -41,17 +41,18 @@ header #form{
     margin: 2em 0 ;
 }
 
-header button{
+ .add{
     margin-top:1em;
-    border-radius: 20%;
+    border-radius: 15%;
     cursor: pointer;
+    width:15%;
     
-}
+} 
 
-header button:hover {
+.add:hover {
     box-shadow:  0 8px 16px 0 slategray;
     
-}
+} 
 
 header input, select{
     width: 35%;
@@ -70,12 +71,23 @@ main #message h2{
 main .flex article {
     height: 50px;
     width: 90%;
-    background-color: lightpink;
     margin-left: 1em;
     margin-bottom: 1em;
     box-shadow: 0 12px 16px 0 dimgray;
     position: relative;
     
+}
+
+.urgente{
+    background-color: lightpink;
+}
+
+.diaria{
+    background-color: lightblue;
+}
+
+.mensual{
+    background-color: lightseagreen;
 }
 
 main .flex h3{
