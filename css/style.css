@@ -1,7 +1,6 @@
 
-/* font-family: 'Hachi Maru Pop', cursive;
-
-font-family: 'Lobster', cursive; */
+/* font-family: 'Hammersmith One', sans-serif;
+font-family: 'Reenie Beanie', cursive; */
 
 
 *{
@@ -9,15 +8,16 @@ font-family: 'Lobster', cursive; */
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    
 }
 
+body{
+    background-color: lightgoldenrodyellow;
+}
 
 #wrapper {
-    border: 2px solid black;
     width: 100%;
     margin: 0 auto;
-    height:100vh;
-    background-color: lightgoldenrodyellow
 }
 
 header {
@@ -26,11 +26,23 @@ header {
     margin-left: 1em ;
 }
 
-h1 {
+h1 {   
+    
     margin-top:0.5em;
+    text-transform: uppercase;
+    color:Black; 
+    text-shadow: 0px 3px 9px lightslategrey;
+    font-weight: bold;
     text-align: center;
-    font-family: 'Lobster', cursive, Tahoma, Verdana;
-    font-size: 2.5em;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 3em;
+}
+
+hr{
+    color: darkolivegreen;
+    background-color: darkolivegreen;
+    height:0.2em;
+    width: 95%;
 }
 
 main div:nth-child(1){
@@ -41,12 +53,11 @@ header #form{
     margin: 2em 0 ;
 }
 
- .add{
+.add{
     margin-top:1em;
     border-radius: 15%;
     cursor: pointer;
-    width:15%;
-    
+    width:15%;   
 } 
 
 .add:hover {
@@ -65,7 +76,7 @@ main #message {
 main #message h2{
     font-size: 2.5em;
     text-align: center;
-    font-family: 'Lobster', cursive, Tahoma, Verdana;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 main .flex article {
@@ -74,8 +85,7 @@ main .flex article {
     margin-left: 1em;
     margin-bottom: 1em;
     box-shadow: 0 12px 16px 0 dimgray;
-    position: relative;
-    
+    position: relative;   
 }
 
 .urgente{
@@ -92,7 +102,8 @@ main .flex article {
 
 main .flex h3{
     margin-left: 1em;
-    font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Kavivanar', cursive;
+    font-size: 1.5em;
 
 }
 
@@ -105,7 +116,7 @@ main .flex h3{
 }
 
 .flex i{
-    color: red;
+    color: rgb(189, 4, 4);
 } 
 
 #search input {
