@@ -35,13 +35,15 @@ currentId = tareas.length
 function createTask(event) {
     event.preventDefault();
     currentId++
-    let i = 1;
-    while (!prioritySelectors[i].selected) {
-        i++;
-    }
+
     let resultValidation = validateForm();
 
     if (resultValidation) {
+        let i = 1;
+        while (!prioritySelectors[i].selected) {
+            i++;
+        }
+
         const newTask = {
             idtarea: currentId,
             titulo: taskForm.value.trim(),
@@ -64,7 +66,7 @@ function validateForm() {
         message.innerHTML = `<h2 style = "color: red">Ambos campos tienen que contener datos</h2>`;
         result = false;
     } else if (taskForm.value === "") {
-        message.innerHTML = `<h2 style ="color: red">Este campo no puede estar vacio</h2>`;
+        message.innerHTML = `<h2 style ="color: red">Introduce una tarea</h2>`;
         result = false;
     } else if (prioritySelectors[0].selected) {
         message.innerHTML = `<h2 style ="color: red">Elige una prioridad</h2>`;
@@ -82,7 +84,6 @@ function filterByText(event) {
 
     divTask.innerHTML = "";
     printAllTheTasks(tasks);
-
 }
 
 function findTasksByText(pWord, tasks) {
@@ -120,6 +121,12 @@ function deleteTask(event) {
     while (tareas[i].idtarea === targetId) {
         i++
     } tareas.splice(tareas[i], 1);
+    message.innerHTML = `<h2 style ="color: green">Tarea borrada correctamente</h2>`;
+    if (tareas.length === 0) {
+        message.innerHTML = `<h2 style ="color: green">No hay tareas pendientes</h2>`;
+    }
+
+
 
 }
 
