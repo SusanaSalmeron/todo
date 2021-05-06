@@ -1,61 +1,72 @@
 
-/* font-family: 'Hachi Maru Pop', cursive;
-
-font-family: 'Lobster', cursive; */
+/* font-family: 'Hammersmith One', sans-serif;
+font-family: 'Reenie Beanie', cursive; */
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 16px;
+    
 }
 
+body{
+    background-color: lightgoldenrodyellow;
+}
 
 #wrapper {
-    border: 2px solid black;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    height: 100vh;
-    background-color: lightgoldenrodyellow
 }
 
 header {
    height: 8em;
     width: 100%;
-    margin-left: 2em ;
+    margin-left: 1em ;
 }
 
-h1 {
-     
+h1 {   
+    
+    margin-top:0.5em;
+    text-transform: uppercase;
+    color:Black; 
+    text-shadow: 0px 3px 9px lightslategrey;
+    font-weight: bold;
     text-align: center;
-    font-family: 'Lobster', cursive, Tahoma, Verdana;
-    font-size: 4em;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 3em;
+}
+
+hr{
+    color: darkolivegreen;
+    background-color: darkolivegreen;
+    height:0.2em;
+    width: 95%;
 }
 
 main div:nth-child(1){
-    margin: 2em;
+    margin: 1em;
 }
 
 header #form{
     margin: 2em 0 ;
 }
 
-header button{
-   height: 2em;
-    width: 10%;
-    border-radius: 20%;
-    margin-left: 1em;
-}
-
-header button:hover {
-    box-shadow:  0 12px 16px 0 slategray;
+.add{
+    margin-top:1em;
+    border-radius: 15%;
     cursor: pointer;
-}
+    width:15%;   
+} 
 
-input, select{
-    height: 2em;
-    width: 40%;
+.add:hover {
+    box-shadow:  0 8px 16px 0 slategray;
+    
+} 
+
+header input, select{
+    width: 35%;
     border: 1px solid grey;
 }
 
@@ -65,46 +76,109 @@ main #message {
 main #message h2{
     font-size: 2.5em;
     text-align: center;
-    font-family: 'Lobster', cursive, Tahoma, Verdana;
-}
-
-main .flex{
-    display: flex;
-    flex-wrap: wrap;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 main .flex article {
-    height: 250px;
-    width: 200px;
-    background-color:lightcoral;
+    height: 50px;
+    width: 90%;
     margin-left: 1em;
     margin-bottom: 1em;
-    border-bottom-right-radius: 20%;
     box-shadow: 0 12px 16px 0 dimgray;
-    position: relative;
+    position: relative;   
 }
+
+.urgente{
+    background-color: lightpink;
+}
+
+.diaria{
+    background-color: lightblue;
+}
+
+.mensual{
+    background-color: lightseagreen;
+}
+
 main .flex h3{
-    font-family: 'Hachi Maru Pop', cursive;
+    margin-left: 1em;
+    font-family: 'Kavivanar', cursive;
+    font-size: 1.5em;
 
 }
 
-.flex button {
+.flex button{
     position: absolute;
-    left:2px;
-    bottom:0;
+    right: 1px;
     background-color: transparent;
     border:transparent;
     cursor: pointer;
-    
-    
 }
+
+.flex i{
+    color: rgb(189, 4, 4);
+} 
 
 #search input {
     
     width: 45%;
 }
 #prioritySearch {
-    width: 45%;
+    width: 50%;
+}
+#prioritySearch input{
+    margin-left: 2em;
+}
+
+
+
+@media(min-width: 576px){
+    main .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main .flex article {
+        height: 70px;
+        width: calc(50% - 32px);
+        margin: 1em;
+    }
+
+    header input, select{
+        width: 40%;
+        border: 1px solid grey;
+    }
+
+    .flex button{
+        position: absolute;
+        right: 1px;
+        bottom:1px;  
+    }
+
+}
+
+
+@media(min-width: 768px){
+    
+    main .flex article {
+        height: 250px;
+        width: 200px;
+       border-bottom-right-radius: 20%;
+       
+    }
+
+    .flex button{
+        position: absolute;
+        bottom:1px;
+        left:1px; 
+    }
+    #wrapper {
+        height:100vh;
+     
+    }
+
+
+    
 }
 
 
